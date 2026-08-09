@@ -1,0 +1,32 @@
+{
+	"name": "personal-website",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"runArgs": [
+		"--privileged"
+	],
+    "forwardPorts": [5173],
+    "portsAttributes": {
+        "5173": {
+            "label": "personal-website",
+            "onAutoForward": "notify"
+        }
+    },
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"editor.defaultFormatter": "svelte.svelte-vscode",
+				"editor.formatOnSave": true,
+				"terminal.integrated.shell.linux": "/bin/bash",
+				"workbench.colorTheme": "Visual Studio Dark"				
+			},
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"svelte.svelte-vscode"
+			]
+		}
+	},
+	"userEnvProbe": "loginInteractiveShell",
+	"postCreateCommand": "npm ci"
+}

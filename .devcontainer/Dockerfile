@@ -1,0 +1,1 @@
+FROM node:26.7.0-bookworm
