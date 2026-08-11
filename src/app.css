@@ -1,0 +1,29 @@
+:root {
+    --color-primary: #212529;
+    background-color: #f8f9fa;
+    
+    --platinum: #e9ecefff;
+    --alabaster-grey: #dee2e6ff;
+    --pale-slate: #ced4daff;
+    --pale-slate-2: #adb5bdff;
+    --slate-grey: #6c757dff;
+    --iron-grey: #495057ff;
+    --gunmetal: #343a40ff;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: var(--color-primary);
+}
+
+p.footer {
+    font-family: monospace;
+    font-size: 90%;
+    line-height: 0;
+}
+
+h1,h2,h3 {
+    line-height: 1.2;
+}
