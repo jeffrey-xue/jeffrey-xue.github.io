@@ -1,17 +1,24 @@
 <script lang="ts">
     import githubIcon from "$lib/assets/github.svg?raw";
     import linkedinIcon from "$lib/assets/linkedin.svg?raw";
+    import profilePhoto from "$lib/assets/pfp.jpg";
 </script>
 
 <main>
-    <h1>Jeffrey Xue</h1>
-    <!-- <hr /> -->
+    <div class="header">
+        <img src={profilePhoto} alt="My parents. Taken by me in Yellowstone" />
+        <h1>Jeffrey Xue</h1>
+        <nav>
+            <a href="/"> <p class="footer">home</p></a>
+            <a href="/projects"><p class="footer">projects</p></a>
+            <a href="/misc"><p class="footer">misc.</p></a>
+        </nav>
+    </div>
     <p>
         Hi! I'm studying Engineering Physics at the University of British
         Columbia and based in the Lower Mainland. My technical interests are
         systems engineering, robotics, and embeded systems.
     </p>
-
     <div class="socials">
         <a
             href="https://github.com/digcheese"
@@ -51,19 +58,39 @@
         margin: 0 auto;
         padding: 2rem 1rem 0rem; /* top | left and right | bottom */
     }
+    .header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-auto-rows: auto;
+        column-gap: 0.8rem;
+        row-gap: 0;
+    }
+    .header h1 {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 3rem;
+        margin: 0;
+    }
+    .header nav {
+        grid-column: 2;
+        grid-row: 2;
+        margin: 0;
+        display: flex;
+        gap: 1rem;
+    }
+    .header img {
+        grid-column: 1;
+        grid-row: 1 / 3;
+        height: 5rem;
+    }
     .socials {
         display: flex;
         gap: 1rem; /* between each icon-text grouping */
     }
     .icon-link {
-        color: var(--gunmetal);
         display: flex;
         align-items: center;
-        text-decoration: none;
         gap: 0.3rem; /* between icon and it's text*/
-    }
-    .icon-link:hover {
-        color: var(--slate-grey);
     }
     /* .icon-link:not(:first-child)::before {
         content: "|";
