@@ -1,6 +1,5 @@
 import { error } from "@sveltejs/kit";
 import type { PageLoad } from "./$types";
-
 import type { Component } from "svelte";
 
 interface ProjectMetadata {

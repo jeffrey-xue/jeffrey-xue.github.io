@@ -2,17 +2,14 @@
   import githubIcon from "$lib/assets/github.svg?raw";
   import linkedinIcon from "$lib/assets/linkedin.svg?raw";
   import profilePhoto from "$lib/assets/pfp.jpg";
+  import NavBar from "$lib/components/NavBar.svelte";
 </script>
 
-<div class="header">
+<header>
   <img src={profilePhoto} alt="My parents. Taken by me in Yellowstone" />
   <h1>Jeffrey Xue</h1>
-  <nav>
-    <a href="/"> <p class="footer">home</p></a>
-    <a href="/projects"><p class="footer">projects</p></a>
-    <a href="/"><p class="footer">misc.</p></a>
-  </nav>
-</div>
+  <NavBar class="nav-placement" />
+</header>
 <p>
   Hi! I'm studying Engineering Physics at the University of British Columbia and
   based in the Lower Mainland. My technical interests are systems engineering,
@@ -53,27 +50,24 @@
 <h2>Featured Projects</h2>
 
 <style>
-  .header {
+  header {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-auto-rows: auto;
     column-gap: 0.8rem;
     row-gap: 0;
   }
-  .header h1 {
+  header h1 {
     grid-column: 2;
     grid-row: 1;
-    font-size: 3rem;
     margin: 0;
   }
-  .header nav {
+  :global(.nav-placement) {
     grid-column: 2;
     grid-row: 2;
     margin: 0;
-    display: flex;
-    gap: 1rem;
   }
-  .header img {
+  header img {
     grid-column: 1;
     grid-row: 1 / 3;
     height: 5rem;
