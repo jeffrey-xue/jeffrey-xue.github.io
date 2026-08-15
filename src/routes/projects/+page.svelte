@@ -1,24 +1,24 @@
 <script lang="ts">
   import ImgHeader from "$lib/components/ImgHeader.svelte";
-  import box from "$lib/assets/empty_box.svg";
+  import ProjectPreviewBlock from "$lib/components/ProjectPreviewBlock.svelte";
   let { data } = $props();
 </script>
 
-<ImgHeader src={box} heading="Projects" />
-
+<ImgHeader heading="Projects" />
 <ul>
   {#each data.projects as project (project.slug)}
-    <ul>
-      <a href="/projects/{project.slug}">
-        <h2>{project.title}</h2>
-        <p>{project.description}</p>
-      </a>
-    </ul>
+    <a href="/projects/{project.slug}">
+      <ProjectPreviewBlock metadata={project} />
+    </a>
   {/each}
 </ul>
 
 <style>
   ul {
     padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    gap: 1rem;
   }
 </style>

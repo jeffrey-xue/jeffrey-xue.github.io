@@ -3,6 +3,9 @@
   import linkedinIcon from "$lib/assets/linkedin.svg?raw";
   import profilePhoto from "$lib/assets/pfp.jpg";
   import ImgHeader from "$lib/components/ImgHeader.svelte";
+  import ProjectPreviewBlock from "$lib/components/ProjectPreviewBlock.svelte";
+
+  import { metadata } from "$lib/projects/ctl-overlay/ctl-overlay.svelte";
 </script>
 
 <ImgHeader
@@ -48,7 +51,18 @@
   >
 </div>
 
-<h2>Featured Projects</h2>
+<div class="featured-projects-heading">
+  <h2>Featured Projects</h2>
+  <a href="/projects"> <p class="footer projects">view all</p></a>
+</div>
+<div class="featured-projects">
+  <a href="/projects/{metadata.slug}">
+    <ProjectPreviewBlock {metadata} />
+  </a>
+  <a href="/projects/{metadata.slug}">
+    <ProjectPreviewBlock {metadata} />
+  </a>
+</div>
 
 <style>
   .socials {
@@ -60,17 +74,24 @@
     align-items: center;
     gap: 0.3rem; /* between icon and it's text*/
   }
-  /* .icon-link:not(:first-child)::before {
-        content: "|";
-        color: var(--pale-slate);
-        font-size: 50%;
-        margin-right: 0.5rem;
-    } */
   .icon-link :global(svg) {
     width: 1.2rem;
     height: 1.2rem;
     fill: currentColor;
     display: block;
     flex-shrink: 0;
+  }
+  .footer.projects {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+  }
+  .featured-projects {
+    display: flex;
+    gap: 1rem;
+  }
+  .featured-projects-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 </style>

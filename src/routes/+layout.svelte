@@ -8,24 +8,33 @@
   <link rel="icon" href={favicon} />
 </svelte:head>
 
-<main>
-  {@render children()}
-</main>
+<div class="page">
+  <main>
+    {@render children()}
+  </main>
 
-<footer>
-  <hr />
-  hi
-</footer>
+  <footer>
+    <hr />
+    <p class="footer">hi</p>
+  </footer>
+</div>
 
 <style>
+  .page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
   main {
-    max-width: 35rem;
+    flex: 1 0 auto;
+    max-width: 40rem;
     margin: 0 auto;
     padding: 4rem 1rem 0rem; /* top | left and right | bottom */
+    width: 100%;
+    box-sizing: border-box;
   }
   footer {
-    position: fixed;
-    bottom: 0rem;
+    flex-shrink: 0;
     text-align: center;
     width: 100%;
   }

@@ -1,11 +1,11 @@
-<!-- TURN THIS COMPONENT INTO THE FULL HEADER since i want to have an icon photo for every project page -->
 <!-- USE @sveltejs/enhanced-img for image optimization and also specifying mobile sizes -->
 <script lang="ts">
+  import emptyBox from "$lib/assets/empty_box.svg";
   let {
-    src = "",
+    src = emptyBox,
     alt = "",
     heading,
-  }: { src: string; alt?: string; heading: string } = $props();
+  }: { src?: string; alt?: string; heading: string } = $props();
 </script>
 
 <main>
