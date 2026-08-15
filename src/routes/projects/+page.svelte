@@ -1,13 +1,10 @@
 <script lang="ts">
-  import NavBar from "$lib/components/NavBar.svelte";
-
+  import ImgHeader from "$lib/components/ImgHeader.svelte";
+  import box from "$lib/assets/empty_box.svg";
   let { data } = $props();
 </script>
 
-<header>
-  <h1>Projects</h1>
-  <NavBar />
-</header>
+<ImgHeader src={box} heading="Projects" />
 
 <ul>
   {#each data.projects as project (project.slug)}
@@ -21,7 +18,7 @@
 </ul>
 
 <style>
-  h1 {
-    margin: 0;
+  ul {
+    padding-left: 0;
   }
 </style>

@@ -2,14 +2,15 @@
   import githubIcon from "$lib/assets/github.svg?raw";
   import linkedinIcon from "$lib/assets/linkedin.svg?raw";
   import profilePhoto from "$lib/assets/pfp.jpg";
-  import NavBar from "$lib/components/NavBar.svelte";
+  import ImgHeader from "$lib/components/ImgHeader.svelte";
 </script>
 
-<header>
-  <img src={profilePhoto} alt="My parents. Taken by me in Yellowstone" />
-  <h1>Jeffrey Xue</h1>
-  <NavBar class="nav-placement" />
-</header>
+<ImgHeader
+  heading="Jeffrey Xue"
+  src={profilePhoto}
+  alt="My parents. Taken by me in Yellowstone"
+/>
+
 <p>
   Hi! I'm studying Engineering Physics at the University of British Columbia and
   based in the Lower Mainland. My technical interests are systems engineering,
@@ -50,28 +51,6 @@
 <h2>Featured Projects</h2>
 
 <style>
-  header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-auto-rows: auto;
-    column-gap: 0.8rem;
-    row-gap: 0;
-  }
-  header h1 {
-    grid-column: 2;
-    grid-row: 1;
-    margin: 0;
-  }
-  :global(.nav-placement) {
-    grid-column: 2;
-    grid-row: 2;
-    margin: 0;
-  }
-  header img {
-    grid-column: 1;
-    grid-row: 1 / 3;
-    height: 5rem;
-  }
   .socials {
     display: flex;
     gap: 1rem; /* between each icon-text grouping */
