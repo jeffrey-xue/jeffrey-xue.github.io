@@ -14,7 +14,7 @@
   <nav>
     <a href="/"> <p class="footer">home</p></a>
     <a href="/projects"><p class="footer">projects</p></a>
-    <a href="/"><p class="footer">misc.</p></a>
+    <a href="/misc"><p class="footer">misc.</p></a>
   </nav>
 </main>
 

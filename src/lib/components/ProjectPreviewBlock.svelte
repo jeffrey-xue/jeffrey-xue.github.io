@@ -7,37 +7,54 @@
   let alt = $derived(metadata.icon_alt ?? "A wireframe box with black border.");
   let title = $derived(metadata.title ?? "");
   let desc = $derived(metadata.description ?? "");
+  let slug = $derived(metadata.slug);
+  // let tags = $derived(metadata.tags ?? []);
 </script>
 
-<main>
+<a href="/projects/{slug}">
   <img {src} {alt} />
   <div class="text">
     <h3>{title}</h3>
-    <p>{desc}</p>
+    <p class="small">{desc}</p>
+    <!-- <ul>
+      {#each tags as tag}
+        <li>
+          <p class="footer">
+            {tag}
+          </p>
+        </li>
+      {/each}
+    </ul> -->
   </div>
-</main>
+</a>
 
 <style>
-  main {
+  a {
     width: 100%;
   }
-
   img {
     width: 100%;
     height: auto;
-    border-radius: 3px 3px 0 0;
+    border-radius: 1px 1px 0 0;
     display: block;
+    background-color: var(--alabaster-grey);
   }
-
   .text {
-    border: 1px solid var(--alabaster-grey);
-    border-top: none;
+    border: 1px solid var(--pale-slate);
     border-radius: 0 0 3px 3px;
-    min-height: 8rem;
+    min-height: 7rem;
+    padding-top: 0.4rem;
   }
   h3,
   p {
     margin: 0;
     padding: 0.3rem;
   }
+  /* ul {
+    display: flex;
+    gap: 1rem;
+  }
+  li {
+    align-items: center;
+  } */
 </style>

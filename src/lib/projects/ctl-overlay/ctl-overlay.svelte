@@ -1,11 +1,13 @@
 <script module lang="ts">
   import type { ProjectMetadata } from "$lib/components/ProjectData";
-  import icon from "$lib/assets/pfp.jpg";
+  import icon from "$lib/projects/ctl-overlay/ctllogo.png";
 
   export const metadata: ProjectMetadata = {
     slug: "ctl-overlay",
     title: "CTL Overlay",
-    description: "This is the ctl overlay. For the Collegiate Tetris Leauge.",
+    id: 2,
+    description:
+      "OBS overlay for the Collegiate Tetris League. A configurable browser source built with ReactJS.",
     icon: icon,
     icon_alt: "Profile photo",
   };

@@ -1,5 +1,7 @@
 <script lang="ts">
+  import { page } from "$app/state";
   import favicon from "$lib/assets/favicon.svg";
+  import SocialsBar from "$lib/components/SocialsBar.svelte";
   import "../app.css";
   let { children } = $props();
 </script>
@@ -13,10 +15,16 @@
     {@render children()}
   </main>
 
-  <footer>
-    <hr />
-    <p class="footer">hi</p>
-  </footer>
+  {#if page.url.pathname !== "/"}
+    <footer>
+      <hr />
+      <div class="footer-contents">
+        <p class="footer">This is the footer!</p>
+        <SocialsBar />
+      </div>
+      <!-- include socials at the footer probably -->
+    </footer>
+  {/if}
 </div>
 
 <style>
@@ -35,10 +43,19 @@
   }
   footer {
     flex-shrink: 0;
-    text-align: center;
     width: 100%;
   }
   footer hr {
-    border: 1px solid var(--pale-slate);
+    border: 1px solid var(--alabaster-grey);
+    margin: 0;
+  }
+  footer .footer-contents {
+    max-width: 40rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
   }
 </style>

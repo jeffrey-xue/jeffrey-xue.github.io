@@ -9,6 +9,7 @@
     --slate-grey: #6c757dff;
     --iron-grey: #495057ff;
     --gunmetal: #343a40ff;
+
 }
 
 body {
@@ -23,6 +24,11 @@ p.footer {
     font-family: monospace;
     font-size: 0.8rem;
     line-height: 0;
+}
+
+p.small {
+    font-size: 0.9rem;
+    /* line-height: 1.2; */
 }
 
 h1,h2,h3 {

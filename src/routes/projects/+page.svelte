@@ -6,10 +6,10 @@
 
 <ImgHeader heading="Projects" />
 <ul>
-  {#each data.projects as project (project.slug)}
-    <a href="/projects/{project.slug}">
+  {#each data.projects.sort((a, b) => (b.id ?? -1) - (a.id ?? -1)) as project}
+    <li>
       <ProjectPreviewBlock metadata={project} />
-    </a>
+    </li>
   {/each}
 </ul>
 
