@@ -5,11 +5,11 @@
   export const metadata: ProjectMetadata = {
     slug: "ctl-overlay",
     title: "CTL Overlay",
-    id: 2,
+    id: 100,
     description:
       "OBS overlay for the Collegiate Tetris League. A configurable browser source built with ReactJS.",
     icon: icon,
-    icon_alt: "Profile photo",
+    icon_alt: "The CTL logo: 'Colette'",
   };
 </script>
 

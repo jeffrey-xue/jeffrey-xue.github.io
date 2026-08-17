@@ -22,7 +22,6 @@
         <p class="footer">This is the footer!</p>
         <SocialsBar />
       </div>
-      <!-- include socials at the footer probably -->
     </footer>
   {/if}
 </div>

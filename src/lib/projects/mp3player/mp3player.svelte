@@ -5,7 +5,7 @@
   export const metadata: ProjectMetadata = {
     slug: "mp3player",
     title: "Custom MP3 Player",
-    id: 1,
+    id: 99,
     // TODO: specify that i made my own pcb when i eventually do that LOL
     description:
       "MP3 player made with my own firmware, electronic, and mechanical design. Uses an ESP32-S3 MCU and PCM5102 DAC",
