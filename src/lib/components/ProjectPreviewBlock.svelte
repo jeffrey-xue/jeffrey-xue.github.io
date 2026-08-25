@@ -41,7 +41,7 @@
   }
   .text {
     border: 1px solid var(--pale-slate);
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 1px 1px;
     min-height: 7rem;
     padding-top: 0.4rem;
   }

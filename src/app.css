@@ -9,7 +9,6 @@
     --slate-grey: #6c757dff;
     --iron-grey: #495057ff;
     --gunmetal: #343a40ff;
-
 }
 
 body {
@@ -46,4 +45,8 @@ a {
 
 a:hover {
     color: var(--slate-grey);
+}
+
+html {
+    scrollbar-gutter: stable both-edges;
 }

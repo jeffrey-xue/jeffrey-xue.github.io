@@ -8,7 +8,7 @@
   }: { src?: string; alt?: string; heading: string } = $props();
 </script>
 
-<main>
+<header>
   <img {src} {alt} />
   <h1>{heading}</h1>
   <nav>
@@ -16,10 +16,10 @@
     <a href="/projects"><p class="footer">projects</p></a>
     <a href="/misc"><p class="footer">misc.</p></a>
   </nav>
-</main>
+</header>
 
 <style>
-  main {
+  header {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-auto-rows: auto;
