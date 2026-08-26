@@ -14,7 +14,7 @@
   <p class="small desc">
     {data.meta.description}
   </p>
-  <br />
+  <!-- <hr /> -->
   <data.content />
 </div>
 

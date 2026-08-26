@@ -55,5 +55,7 @@ a:hover {
 }
 
 html {
-    scrollbar-gutter: stable;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--pale-slate) transparent;
 }
