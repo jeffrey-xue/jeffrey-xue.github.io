@@ -12,9 +12,11 @@
   <img {src} {alt} />
   <h1>{heading}</h1>
   <nav>
-    <a href="/"> <p class="footer">home</p></a>
-    <a href="/projects"><p class="footer">projects</p></a>
-    <a href="/misc"><p class="footer">misc.</p></a>
+    <p class="footer">
+      <a href="/"> home</a>
+      <a href="/projects">projects</a>
+      <a href="/misc">misc.</a>
+    </p>
   </nav>
 </header>
 
@@ -37,6 +39,7 @@
     margin: 0;
     display: flex;
     gap: 1rem;
+    align-self: end;
   }
   img {
     grid-column: 1;

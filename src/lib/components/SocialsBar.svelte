@@ -5,7 +5,7 @@
 
 <div class="socials">
   <a
-    href="https://github.com/digcheese"
+    href="https://github.com/jeffrey-xue"
     aria-label="GitHub"
     class="icon-link"
     target="_blank"
