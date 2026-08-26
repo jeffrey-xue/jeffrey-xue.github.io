@@ -40,10 +40,13 @@
     display: flex;
     gap: 1rem; /* between each icon-text grouping */
   }
+  a {
+    text-decoration: none;
+  }
   .icon-link {
     display: flex;
     align-items: center;
-    gap: 0.3rem; /* between icon and it's text*/
+    gap: 0.3rem; /* between icon and its text*/
   }
   .icon-link :global(svg) {
     width: 1.2rem;

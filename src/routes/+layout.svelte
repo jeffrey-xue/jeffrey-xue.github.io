@@ -36,7 +36,7 @@
     flex: 1 0 auto;
     max-width: 40rem;
     margin: 0 auto;
-    padding: 4rem 1rem 0rem; /* top | left and right | bottom */
+    padding: 4rem 1rem; /* top | left and right | bottom */
     width: 100%;
     box-sizing: border-box;
   }

@@ -19,6 +19,9 @@
 </header>
 
 <style>
+  a {
+    text-decoration: none;
+  }
   header {
     display: grid;
     grid-template-columns: auto 1fr;

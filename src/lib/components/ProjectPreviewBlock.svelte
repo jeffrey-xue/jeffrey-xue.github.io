@@ -31,6 +31,7 @@
 <style>
   a {
     width: 100%;
+    text-decoration: none;
   }
   img {
     width: 100%;
