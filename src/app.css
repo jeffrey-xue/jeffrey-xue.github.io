@@ -31,6 +31,12 @@ p.small {
     /* line-height: 1.2; */
 }
 
+p.desc {
+    background-color: var(--platinum);
+    padding: 0.5rem;
+}
+
+
 h1,h2,h3 {
     line-height: 1.2;
 }
@@ -49,5 +55,5 @@ a:hover {
 }
 
 html {
-    scrollbar-gutter: stable both-edges;
+    scrollbar-gutter: stable;
 }

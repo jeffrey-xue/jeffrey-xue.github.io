@@ -10,12 +10,16 @@
   heading={data.meta.title}
 />
 
-<main>
+<div>
+  <p class="small desc">
+    {data.meta.description}
+  </p>
+  <br />
   <data.content />
-</main>
+</div>
 
 <style>
-  main {
+  div {
     padding-top: 1rem;
   }
 </style>

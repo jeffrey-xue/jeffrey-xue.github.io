@@ -12,11 +12,9 @@
   <img {src} {alt} />
   <h1>{heading}</h1>
   <nav>
-    <p class="footer">
-      <a href="/"> home</a>
-      <a href="/projects">projects</a>
-      <a href="/misc">misc.</a>
-    </p>
+    <a href="/"> <p class="footer">home</p></a>
+    <a href="/projects"><p class="footer">projects</p></a>
+    <a href="/misc"><p class="footer">misc.</p></a>
   </nav>
 </header>
 
