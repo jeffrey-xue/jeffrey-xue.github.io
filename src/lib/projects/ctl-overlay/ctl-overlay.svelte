@@ -1,6 +1,6 @@
 <script module lang="ts">
   import type { ProjectMetadata } from "$lib/components/ProjectData";
-  import icon from "$lib/projects/ctl-overlay/ctllogo.png";
+  import icon from "$lib/projects/ctl-overlay/ctllogo.webp";
 
   export const metadata: ProjectMetadata = {
     slug: "ctl-overlay",

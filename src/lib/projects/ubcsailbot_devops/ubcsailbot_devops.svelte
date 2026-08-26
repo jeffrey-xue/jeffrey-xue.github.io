@@ -1,8 +1,8 @@
 <script module lang="ts">
   import type { ProjectMetadata } from "$lib/components/ProjectData";
-  import icon from "$lib/projects/ubcsailbot_devops/icon.jpg";
-  import polaris_gui from "$lib/projects/ubcsailbot_devops/polaris_gui.png";
-  import gui_on_water from "$lib/projects/ubcsailbot_devops/onwater.jpg";
+  import icon from "$lib/projects/ubcsailbot_devops/icon.webp";
+  import polaris_gui from "$lib/projects/ubcsailbot_devops/polaris_gui.webp";
+  import gui_on_water from "$lib/projects/ubcsailbot_devops/onwater.webp";
 
   export const metadata: ProjectMetadata = {
     slug: "ubcsailbot_devops",

@@ -1,6 +1,6 @@
 <script module lang="ts">
   import type { ProjectMetadata } from "$lib/components/ProjectData";
-  import icon from "$lib/projects/mp3player/icon.png";
+  import icon from "$lib/projects/mp3player/icon.webp";
 
   export const metadata: ProjectMetadata = {
     slug: "mp3player",
