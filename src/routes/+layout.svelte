@@ -8,6 +8,7 @@
 
 <svelte:head>
   <link rel="icon" href={favicon} />
+  <title>Jeffrey Xue</title>
 </svelte:head>
 
 <div class="page">
