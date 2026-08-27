@@ -1,0 +1,64 @@
+:root {
+    --color-primary: #212529;
+    background-color: #f8f9fa;
+    
+    --platinum: #e9ecefff;
+    --alabaster-grey: #dee2e6ff;
+    --pale-slate: #ced4daff;
+    --pale-slate-2: #adb5bdff;
+    --slate-grey: #6c757dff;
+    --iron-grey: #495057ff;
+    --gunmetal: #343a40ff;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: var(--color-primary);
+    font-size: 16px;
+}
+
+p.footer {
+    font-family: monospace;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+p.small {
+    font-size: 0.9rem;
+    /* line-height: 1.2; */
+}
+
+p.desc {
+    background-color: var(--platinum);
+    padding: 0.5rem;
+}
+
+
+h1,h2,h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+a {
+    color: var(--gunmetal);
+}
+
+a:hover {
+    color: var(--slate-grey);
+}
+
+html {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--pale-slate) transparent;
+}
+
+img {
+    max-width: 100%;
+}

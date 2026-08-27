@@ -19,11 +19,24 @@
 				"editor.defaultFormatter": "svelte.svelte-vscode",
 				"editor.formatOnSave": true,
 				"terminal.integrated.shell.linux": "/bin/bash",
-				"workbench.colorTheme": "Visual Studio Dark"				
+				"workbench.colorTheme": "GitHub Dark Dimmed",		
+				"editor.codeActionsOnSave": {
+					"source.fixAll.eslint": "explicit"
+				},
+				"[typescript]": {
+				"editor.defaultFormatter": "esbenp.prettier-vscode"
+				},
+				"[javascript]": {
+				"editor.defaultFormatter": "esbenp.prettier-vscode"
+				},
+				"eslint.format.enable": true		
 			},
 			"extensions": [
 				"dbaeumer.vscode-eslint",
-				"svelte.svelte-vscode"
+				"svelte.svelte-vscode",
+				"phoenisx.cssvar",
+				"GitHub.github-vscode-theme",
+				"esbenp.prettier-vscode"
 			]
 		}
 	},
